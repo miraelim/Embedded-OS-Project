@@ -21,6 +21,8 @@ void main(void)
 
 	Printf_test();
 
+	while(true);
+
 	i = 100;
 	while(i--)
 	{
