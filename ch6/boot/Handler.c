@@ -2,7 +2,7 @@
 #include "stdint.h"
 #include "HalInterrupt.h"
 
- __attribute__ ((interrupt ("IRQ"))) void Irq_Handler(void)
+__attribute__ ((interrupt ("IRQ"))) void Irq_Handler(void)
 {
     Hal_interrupt_run_handler();
 }
