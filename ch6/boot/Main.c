@@ -1,6 +1,8 @@
 #include "stdint.h"
-#include "HalUart.h"
+#include "stdbool.h"
 
+#include "HalUart.h"
+#include "HalInterrupt.h"
 #include "stdio.h"
 
 static void Hw_init(void);
@@ -22,13 +24,6 @@ void main(void)
 	Printf_test();
 
 	while(true);
-
-	i = 100;
-	while(i--)
-	{
-		uint8_t ch = Hal_uart_get_char();
-		Hal_uart_put_char(ch);
-	}
 }
 
 static void Hw_init(void)
