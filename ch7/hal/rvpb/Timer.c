@@ -46,8 +46,3 @@ static void interrupt_handler(void)
 
     Timer->timerxintclr = 1;
 }
-
-uint32_t Hal_timer_get_1ms_counter(void)
-{
-	return internal_1ms_counter;
-}
